@@ -1,0 +1,29 @@
+The code is designed to process a meeting transcript and extract useful information such as participants, keywords, key summaries, decisions made, agenda items, action items, and follow-up tasks. Here's a breakdown of how the code works:
+
+	Reading Transcript: 
+The function read_transcript reads the content of a transcript file.
+
+	Extracting Participants:
+The function extract_speakers_directly extracts speaker names directly from the transcript using a regex pattern to match names followed by colons.
+
+	Extracting Keywords:
+The function extract_unique_keywords extracts top unique keywords from the text using the RAKE (Rapid Automatic Keyword Extraction) algorithm.
+
+	Extracting Action Items:
+The function extract_action_items extracts action items from the document by identifying sentences containing action-related keywords.
+
+	Identifying Follow-Up Tasks:
+The function identify_follow_up_tasks identifies follow-up tasks from the document by searching for sentences containing specific task indicators.
+
+	Processing Transcript:
+The function process_transcript_for_complete_analysis processes the transcript to extract components such as participants, keywords, key summaries, decisions made, agenda items, action items, and follow-up tasks.
+
+	Output:
+The script reads the transcript file, processes it using the process_transcript_for_complete_analysis function, and then prints the extracted information, including keywords, participants, key summaries, decisions made, agenda items, action items, and follow-up tasks.
+
+
+	To use this code:
+
+	Make sure to have the transcript file (meeting_transcript.txt) in the correct location.
+	Adjust the file path accordingly if the transcript file is located elsewhere.
+	Run the script to output the extracted information to the console.
