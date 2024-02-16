@@ -1,3 +1,9 @@
+#install the libraries 
+
+!pip install spacy transformers  # installs spaCy and Transformers
+!python -m spacy download en_core_web_sm  #downloads the English language model for spaCy 
+!pip install rake-nltk  #Rapid Automatic Keyword Extraction
+
 import spacy
 from rake_nltk import Rake
 import re
