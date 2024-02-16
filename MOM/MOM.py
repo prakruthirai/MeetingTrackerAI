@@ -90,7 +90,7 @@ def process_transcript_for_complete_analysis(file_path):
 
 
 if __name__ == "__main__": 
-    file_path = "transcript.txt" # Make sure this path is correct
+    file_path = "meeting_transcript.txt" # Make sure this path is correct
     mom_details = process_transcript_for_complete_analysis(file_path)
 
     print("\nKeywords:", ", ".join(mom_details["Keywords"]))
